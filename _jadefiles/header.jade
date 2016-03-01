@@ -1,0 +1,24 @@
+mixin nav-content()
+    ul
+        li: a(href="#about") About
+        li: a(href="#devdroids") DevDroids
+        li: a(href="#pragmaticself") PragmaticSelf
+        li: a(href="#experience") Experience
+        li: a(href="#contact") Contact
+
+.mobile-nav
+    +nav-content()
+
+
+header
+    .header-position
+        div
+            h1.logo Alpar Gabos
+            .logo-text Alpar Gabos
+
+        nav.site-nav
+            +nav-content()
+
+        a(href="mailto:info@alpargabos.com").email-link +email me
+
+        .mobile-nav-toggle: span
