@@ -1,0 +1,18 @@
+section.contact
+    .flex.flex--center
+        .col-2
+            h1.home-lead to connect
+            h2.home-sub with others, like you!
+            ul
+                li.linkedin: a(href="")
+                li.twitter: a(href="")
+                li.github: a(href="")
+                li.facebook: a(href="")
+
+        .col-2
+            form.control-group(action="//formspree.io/info@alpargabos.com", method="POST")
+                input.form-control(type="text", name="name", placeholder="Name")
+                input.form-control(type="email", name="_replyto", placeholder="Email")
+                input(type="hidden", name="_subject", value="New submission!")
+                input(type="text", name="_gotcha", style="display:none")
+                input.home-cta(type="submit", value="Send")
