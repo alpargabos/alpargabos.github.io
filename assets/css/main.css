@@ -361,16 +361,13 @@ th {
   src: local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
-/* latin bold*/
-/*
+/* latin light */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-*/
+  font-weight: 200;
+  src: local("Montserrat-Light"), url(../font/montserrat-light-webfont.woff2) format("woff2"); }
+
 .highlight {
   background: #ffffff; }
 
@@ -710,6 +707,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.home-cta {
+  font-size: 40px;
+  display: block;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 0.15em 0;
+  line-height: 1.25;
+  transition: all 0.15s ease-in-out; }
+  .home-cta:hover {
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+    color: #1B9D84; }
+
 .home-wrap header {
   width: 130px;
   background: white;
@@ -743,7 +753,8 @@ body {
     margin: 0 0 9px 0; }
   .home-wrap header .logo-text {
     text-align: center;
-    font-size: 10px; }
+    font-size: 10px;
+    color: gray; }
   .home-wrap header .site-nav {
     margin-right: 20px; }
     .home-wrap header .site-nav ul {
@@ -755,6 +766,9 @@ body {
       margin-bottom: 10px; }
       .home-wrap header .site-nav li:last-child {
         margin-bottom: 0; }
+      .home-wrap header .site-nav li a {
+        color: black;
+        font-weight: 400; }
   .home-wrap header .email-link {
     display: block;
     text-align: right;
@@ -852,7 +866,7 @@ section.about {
   background-size: 77px 74px; }
   section.about h1.home-lead {
     color: white;
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 200;
     margin-top: 55px;
     margin-bottom: 0; }
@@ -865,6 +879,7 @@ section.about {
     max-width: 300px; }
   section.about p.home-small {
     font-size: 15px;
+    font-weight: 200;
     text-align: right;
     margin-right: 25px;
     max-width: 275px; }
@@ -873,15 +888,47 @@ section.about {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 505px;
-    width: 405px; }
+    min-width: 405px;
+    width: 100%; }
   section.about .stretch-to-right {
     margin-right: -100px; }
 
 section.devdroids {
-  background-image: url(../img/logo_bg.png);
+  background-image: url(../img/home_devdroids_bg.png);
   background-color: #1B9D84;
-  background-repeat: repeat;
-  background-size: 77px 74px; }
+  background-repeat: repeat; }
+  section.devdroids h1.home-lead {
+    color: white;
+    font-size: 72px;
+    font-weight: 200;
+    margin-top: 35px;
+    margin-bottom: 0; }
+  section.devdroids h2.home-sub {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.3;
+    margin: 0 0; }
+  section.devdroids h2.home-link {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.3;
+    margin: 25px 0 100px;
+    text-align: center; }
+  section.devdroids .home-devdroids-icon {
+    background: url(../img/home_devdroids_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    margin-top: 30px;
+    height: 330px;
+    width: 100%; }
+  section.devdroids .push-up {
+    margin-top: -20px; }
+  section.devdroids .home-cta {
+    color: #1B9D84;
+    margin-top: 55px; }
 
 .home-wrap {
   display: -webkit-flex;
@@ -920,11 +967,11 @@ section.devdroids {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px; }
+  margin: 0 30px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px; }
+  margin: 0 30px; }
 
 .col-fifty-percent {
   width: 50%; }
