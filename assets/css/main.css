@@ -940,7 +940,7 @@ section.devdroids {
     font-size: 40px;
     font-weight: 200;
     line-height: 1.3;
-    margin: 25px 0 55px;
+    margin: 25px 5px 55px 5px;
     text-align: center; }
   section.devdroids .home-devdroids-icon {
     background: url(../img/home_devdroids_icon.png);
@@ -961,6 +961,12 @@ section.devdroids {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+  @media (max-width: 640px) {
+    section.devdroids .home-devdroids-icon {
+      margin: 20px 0 0 0; }
+    section.devdroids h1.home-lead {
+      margin-top: -5px;
+      padding-top: 35px; } }
 
 section.pragmaticself {
   background-image: url(../img/home_pragmaticself_bg.png);
