@@ -989,7 +989,7 @@ section.pragmaticself {
     max-width: 407px; }
   section.pragmaticself h2.home-link {
     color: white;
-    font-size: 39px;
+    font-size: 40px;
     font-weight: 200;
     line-height: 1.3;
     margin: 25px 5px 55px 5px;
@@ -1065,14 +1065,18 @@ section.experience {
             flex-direction: column;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    @media (max-width: 775px) {
-      section.experience .col-fifty-percent {
-        height: auto;
-        display: block;
-        padding: 50px 20px; }
-        section.experience .col-fifty-percent:last-child {
-          padding: 0px 20px 50px; } }
+            justify-content: center;
+    margin-left: 5px; }
+  @media (max-width: 640px) {
+    section.experience h1.home-lead {
+      margin-top: -5px;
+      padding-top: 35px; }
+    section.experience .col-fifty-percent {
+      height: auto;
+      display: block;
+      margin-left: 0px; }
+      section.experience .col-fifty-percent:last-child {
+        padding: 0px 20px 50px; } }
 
 section.contact {
   background-image: url(../img/home_contact_bg.png);
