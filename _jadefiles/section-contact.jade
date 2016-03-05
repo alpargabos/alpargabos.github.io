@@ -1,19 +1,21 @@
-section.contact
-    .flex.flex--center
-        .col-2
+section.contact#contact
+    .flex.flex--space-around
+        .col-fifty-percent
             h1.home-lead to connect
             h2.home-sub with others, like you!
-            a(href="//linkedin.com/in/alpargabos"): img.linkedin
-            a(href="//github.com/alpargabos"): img.github
-            a(href="//twitter.com/alpargabos"): img.twitter
-            a(href="//facebook.com/alpar.gabos.3"): img.facebook
-
+            .social
+                a(href="//linkedin.com/in/alpargabos"): .linkedin
+                a(href="//github.com/alpargabos"): .github
+                a(href="//twitter.com/alpargabos"): .twitter
+                a(href="//facebook.com/alpar.gabos.3"): .facebook
 
         .col-2
-            form(action="//formspree.io/info@alpargabos.com", method="POST")
-            input.name(type="text", name="name", placeholder="Name")
-            input.email(type="email", name="_replyto", placeholder="Email")
-            textarea.message-body(type="text", name="body", placeholder="Message...")
-            input(type="hidden", name="_subject", value="New submission!")
-            input(type="text", name="_gotcha", style="display:none")
-            input.home-cta(type="submit", value="Send")
+            .form-display
+                form(action="//formspree.io/info@alpargabos.com", method="POST")
+                .info
+                    input.name(class="name", type="text", name="name", placeholder="Name")
+                    input.email(class="email", type="email", name="_replyto", placeholder="Email")
+                textarea.message-body(class="text", type="text", name="body", placeholder="Message...")
+                input(type="hidden", name="_subject", value="New submission!")
+                input(type="text", name="_gotcha", style="display:none")
+                input.home-cta(type="submit", value="SEND")

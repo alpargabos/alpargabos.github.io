@@ -11,7 +11,7 @@ section.about
       size: 70px
       weight: 200
     margin-top: 55px
-    margin-bottom: 0
+    margin-bottom: 20px
 
   h2.home-sub
     color: white
@@ -30,6 +30,9 @@ section.about
     margin-right: 25px
     max-width: 275px
 
+    @media (max-width: 840px) and (min-width: 775px)
+      text-align: left
+
 
   .home-about-profile
     background: url(../img/home_about_profile.png)
@@ -37,8 +40,16 @@ section.about
       repeat: no-repeat
       position: bottom
     height: 505px
-    min-width: 405px
+    min-width: 320px
     width: 100%
+    overflow: hidden
 
   .stretch-to-right
     margin-right: -100px
+
+    @media (max-width: 640px)
+      margin-right: 0
+
+  .col-1
+    @media (max-width: 640px)
+      margin: 5px
