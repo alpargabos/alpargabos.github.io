@@ -846,7 +846,7 @@ body {
 @media (max-width: 775px) {
   .home-wrap header {
     width: auto;
-    padding: 20px 0; }
+    padding: 0; }
     .home-wrap header .header-position {
       width: auto;
       position: relative;
@@ -862,10 +862,11 @@ body {
     .home-wrap header .site-nav,
     .home-wrap header .email-link {
       display: none; }
-    .home-wrap header h1.logo {
+    .home-wrap header .logo {
       height: 60px;
-      margin: 0; }
-    .home-wrap header div.logo-text {
+      width: 60px;
+      margin: 5px 10px; }
+    .home-wrap header .logo-text {
       display: none; }
     .home-wrap header .mobile-nav-toggle {
       display: -webkit-flex;
@@ -874,7 +875,9 @@ body {
   .mobile-nav.is-open {
     display: block;
     -webkit-transform: translateY(0%);
-            transform: translateY(0%); } }
+            transform: translateY(0%); }
+    .mobile-nav.is-open a {
+      color: black; } }
 
 section.about {
   background-image: url(../img/logo_bg.png);
@@ -908,17 +911,19 @@ section.about {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 505px;
-    min-width: 320px;
+    min-width: 300px;
     width: 100%;
     overflow: hidden; }
   section.about .stretch-to-right {
     margin-right: -100px; }
-    @media (max-width: 640px) {
-      section.about .stretch-to-right {
-        margin-right: 0; } }
   @media (max-width: 640px) {
+    section.about .stretch-to-right {
+      margin-right: 0; }
     section.about .col-1 {
-      margin: 5px; } }
+      margin: 5px; }
+    section.about h1.home-lead {
+      margin-top: 0;
+      padding-top: 10px; } }
 
 section.devdroids {
   background-image: url(../img/home_devdroids_bg.png);

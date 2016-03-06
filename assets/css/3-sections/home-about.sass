@@ -40,16 +40,19 @@ section.about
       repeat: no-repeat
       position: bottom
     height: 505px
-    min-width: 320px
+    min-width: 300px
     width: 100%
     overflow: hidden
 
   .stretch-to-right
     margin-right: -100px
 
-    @media (max-width: 640px)
-      margin-right: 0
 
-  .col-1
-    @media (max-width: 640px)
+  @media (max-width: 640px)
+    .stretch-to-right
+      margin-right: 0
+    .col-1
       margin: 5px
+    h1.home-lead
+      margin-top: 0
+      padding-top: 10px
