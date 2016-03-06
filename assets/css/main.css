@@ -1047,11 +1047,13 @@ section.pragmaticself {
         -ms-flex-pack: distribute;
             justify-content: space-around; }
   @media (max-width: 640px) {
-    section.pragmaticself a.home-pragmaticself-icon {
-      margin: 20px 0 0 0; }
-    section.pragmaticself h1.home-lead {
-      margin-top: -5px;
-      padding-top: 35px; } }
+    section.pragmaticself {
+      background-size: 100%; }
+      section.pragmaticself a.home-pragmaticself-icon {
+        margin: 20px 0 0 0; }
+      section.pragmaticself h1.home-lead {
+        margin-top: -5px;
+        padding-top: 35px; } }
 
 section.experience {
   background-image: url(../img/home_experience_bg.png);
