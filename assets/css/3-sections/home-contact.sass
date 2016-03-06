@@ -22,8 +22,8 @@ section.contact
     margin: 0 0
     max-width: 250px
 
-  .linkedin
-    background: url(../img/linkedin_icon.png)
+  @mixin social-icon($bg-url)
+    background: url($bg-url)
     background:
       repeat: no-repeat
       size: contain
@@ -31,40 +31,25 @@ section.contact
     height: 38px
     width: 38px
     border: 0
+    transition: all 0.20s ease-in-out
 
+    &:hover
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4)
+      background-size: 98%
+      background-color: rgba(#35B6BA, 0.7)
+      border-radius: 0.7em
+
+  .linkedin
+    @include social-icon("../img/linkedin_icon.png")
 
   .facebook
-    background: url(../img/facebook_icon.png)
-    background:
-      repeat: no-repeat
-      size: contain
-      position: 50% 50%
-    height: 38px
-    width: 38px
-    border: hidden
-
+    @include social-icon("../img/facebook_icon.png")
 
   .twitter
-    background: url(../img/twitter_icon.png)
-    background:
-      repeat: no-repeat
-      size: contain
-      position: 50% 50%
-    width: 38px
-    height: 38px
-
+    @include social-icon("../img/twitter_icon.png")
 
   .github
-    background: url(../img/github_icon.png)
-    background:
-      repeat: no-repeat
-      size: contain
-      position: 50% 50%
-    height: 38px
-    width: 38px
-    border: hidden
-    &:hover
-      filter: hue-rotate(180deg)
+    @include social-icon("../img/github_icon.png")
 
   .home-cta
     color: #575757
@@ -110,15 +95,18 @@ section.contact
     background-color: white
     color: #575757
     border: hidden
-    width: 434px
+    width: 100%
     margin-bottom: 0
 
-  .social
-    width: 350px
-    margin-top: 45px
+
+  .col-1.social
+    height: inherit
     display: flex
-    flex-direction: row
-    justify-content: space-between
+    flex-direction: column
+    justify-content: space-around
+    background-color: rgba(white, 0.3)
+    margin: 0
+    padding: 0 10px
 
   .col-fifty-percent
     display: flex
@@ -135,8 +123,25 @@ section.contact
     margin-left: 40px
     height: 500px
 
-    @media (max-width: 640px)
+  .col-2
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 500px
+
+  @media (max-width: 640px)
+    .col-2
+      padding: 20px 0
+      height: auto
+      text-align: center
+
+    .col-fifty-percent
       margin: 0
 
-  .col-2
-    align-self: center
+    .col-1.social
+      flex-direction: row
+      justify-content: space-between
+      padding: 20px 20px
+
+    h2.home-sub
+      max-width: 100%
