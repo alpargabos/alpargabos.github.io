@@ -4,6 +4,7 @@ section.about
     color: #575757
     repeat: repeat
     size: 77px 74px
+  position: relative
 
   h1.home-lead
     color: white
@@ -47,6 +48,8 @@ section.about
   .stretch-to-right
     margin-right: -100px
 
+  .at-bottom
+    display: none
 
   @media (max-width: 640px)
     .stretch-to-right
@@ -56,3 +59,21 @@ section.about
     h1.home-lead
       margin-top: 0
       padding-top: 10px
+
+    h1.home-lead.stretch-to-right
+      display: none
+
+    h1.home-lead.at-bottom
+        display: block
+        position: absolute
+        bottom: 0
+        background-color: rgba(#575757, 0.8)
+        padding: 0
+        margin: 0 0 0 -5px
+        width: 100%
+        text-align: left
+
+
+
+
+
