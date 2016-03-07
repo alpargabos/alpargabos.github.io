@@ -1,4 +1,4 @@
 name: Alpar Gabos
 markdown: redcarpet
-highlighter: pygments # or rouge or null
+highlighter: rouge # or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
